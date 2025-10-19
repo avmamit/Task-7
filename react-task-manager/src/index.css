@@ -1,0 +1,39 @@
+/* Global styles and design tokens */
+:root{
+  --bg: #071024; /* deep navy */
+  --muted: #94a3b8;
+  --accent: #06b6d4; /* teal */
+  --accent-2: #7c3aed; /* purple */
+  --glass: rgba(255,255,255,0.04);
+  --radius: 12px;
+}
+
+/* Reset-ish */
+*{box-sizing:border-box}
+html,body,#root{height:100%;margin:0}
+body{
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  /* Solid gradient background (no image) */
+  background: linear-gradient(180deg, #071024 0%, #081329 60%);
+  color: #e6eef8;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Center container */
+.app-container{
+  max-width: 960px;
+  margin: 36px auto;
+  padding: 28px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(2,6,23,0.6);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+/* Utility */
+img{max-width:100%;display:block}
+
+@media (max-width:640px){
+  .app-container{padding:18px;margin:18px}
+}
